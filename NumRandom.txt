@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let listanum=[];
+
+    for(let i=0; i<20; i++)
+    {
+      listanum[i]=Math.floor(Math.random()*51);
+     for(let y=0; y<i; y++)
+     {
+         if(listanum[i]==listanum[y])
+          {
+             i--;
+                break;
+          }
+     }
+    }
+
+    for(let j=0; j<20; j++)
+    {
+      console.log(listanum[j]);
+    }   
+    </script>
+</body>
+</html>
